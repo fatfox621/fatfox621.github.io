@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | 飞狐的博客</title>
+  <title>听飞狐聊JavaScript设计模式系列01 | 飞狐的博客</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,19 +15,21 @@
     <meta name="keywords" content="前端,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
   
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="大家好，小弟飞狐，爱学习，爱装逼，乐于分享，初来乍到，请多多关照(～ o ～)~zZ。出道几年，对JavaScript情有独钟，聊技术之前，啰嗦啰嗦，虽然咱们都系程序猿，但是一定要多锻炼，跑跑步，爬爬山虾米的，身体系革命的本钱。
+另外，个人觉得JavaScript是很文艺的一门语言，文艺范儿会更适合这门语言（个人观点，不喜勿喷），JS基础学习资料在网上非常多，所以我们这里从JS面向对象开始（注：需">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="听飞狐聊JavaScript设计模式系列01">
 <meta property="og:url" content="https://fatfox621.github.io/2016/10/27/hello-world/index.html">
 <meta property="og:site_name" content="飞狐的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-10-26T16:50:14.423Z">
+<meta property="og:description" content="大家好，小弟飞狐，爱学习，爱装逼，乐于分享，初来乍到，请多多关照(～ o ～)~zZ。出道几年，对JavaScript情有独钟，聊技术之前，啰嗦啰嗦，虽然咱们都系程序猿，但是一定要多锻炼，跑跑步，爬爬山虾米的，身体系革命的本钱。
+另外，个人觉得JavaScript是很文艺的一门语言，文艺范儿会更适合这门语言（个人观点，不喜勿喷），JS基础学习资料在网上非常多，所以我们这里从JS面向对象开始（注：需">
+<meta property="og:image" content="https://fatfox621.github.io/img/bVqCSW">
+<meta property="og:updated_time" content="2016-10-26T19:39:07.090Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="听飞狐聊JavaScript设计模式系列01">
+<meta name="twitter:description" content="大家好，小弟飞狐，爱学习，爱装逼，乐于分享，初来乍到，请多多关照(～ o ～)~zZ。出道几年，对JavaScript情有独钟，聊技术之前，啰嗦啰嗦，虽然咱们都系程序猿，但是一定要多锻炼，跑跑步，爬爬山虾米的，身体系革命的本钱。
+另外，个人觉得JavaScript是很文艺的一门语言，文艺范儿会更适合这门语言（个人观点，不喜勿喷），JS基础学习资料在网上非常多，所以我们这里从JS面向对象开始（注：需">
+<meta name="twitter:image" content="https://fatfox621.github.io/img/bVqCSW">
 
   
 
@@ -161,7 +163,7 @@ Quick">
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JS数据类型介绍"><span class="toc-text">JS数据类型介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS引用类型介绍"><span class="toc-text">JS引用类型介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ECMAScript5数组的新特性"><span class="toc-text">ECMAScript5数组的新特性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#indexOf"><span class="toc-text">indexOf</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lastIndexOf"><span class="toc-text">lastIndexOf</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#every"><span class="toc-text">every</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#filter"><span class="toc-text">filter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#forEach"><span class="toc-text">forEach</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#some"><span class="toc-text">some</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#map"><span class="toc-text">map</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#reduce和reduceRight"><span class="toc-text">reduce和reduceRight</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#话外音"><span class="toc-text">话外音</span></a></li></ol>
   </div>
 
 
@@ -169,7 +171,7 @@ Quick">
 <div class="content content-post CENTER">
    <article id="post-hello-world" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">Hello World</h1>
+    <h1 class="post-title">听飞狐聊JavaScript设计模式系列01</h1>
 
     <div class="article-meta">
       <span>
@@ -180,7 +182,7 @@ Quick">
       
         <span class="article-author">
           <i class="icon-user"></i>
-          <span>fatfox</span>
+          <span>飞狐</span>
         </span>
       
 
@@ -199,15 +201,73 @@ Quick">
 
   <div class="article-content">
     
-      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+      <p>大家好，小弟<strong>飞狐</strong>，爱学习，爱装逼，乐于分享，初来乍到，请多多关照(～ o ～)~zZ。出道几年，对JavaScript情有独钟，聊技术之前，啰嗦啰嗦，虽然咱们都系程序猿，但是一定要多锻炼，跑跑步，爬爬山虾米的，身体系革命的本钱。</p>
+<p>另外，个人觉得JavaScript是很文艺的一门语言，文艺范儿会更适合这门语言（个人观点，不喜勿喷），JS基础学习资料在网上非常多，所以我们这里从JS面向对象开始<strong>（注：需要一（zha）定（shi）的JS基础）</strong>，本系列作为JavaScript扩展读物<strong>（有讲错的地方，欢迎大家指出）</strong>，又扯了这么多，这回真的来进入正题了：</p>
+<h2 id="JS数据类型介绍"><a href="#JS数据类型介绍" class="headerlink" title="JS数据类型介绍"></a>JS数据类型介绍</h2><ul>
+<li>ECMAScript的数据类型值分为基本类型值和引用类型值。</li>
+<li>用typeof操作符来判断类型，当然如何准确判断类型，后面还会聊到。</li>
+<li>Function特别注意一下，函数在ECMAScript中是对象，不是一种数据类型，这可是JS世界的一等公民。</li>
+<li>undefined和null，null和object的关系又很暧昧，后面细说，要不然会晕菜。</li>
+<li>基本数据类型:Undefined，Null，Boolean，Number，String，这五种基本数据类型是按值访问的。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">   <span class="keyword">var</span> o;			<span class="comment">// undefined表示变量声明了，却没有赋值</span></div><div class="line"><span class="keyword">var</span> o=<span class="literal">null</span>;		<span class="comment">// null表示空值</span></div><div class="line"><span class="keyword">var</span> o=<span class="string">"字符串"</span>;	<span class="comment">// string字符串</span></div><div class="line"><span class="keyword">var</span> o=<span class="literal">false</span>;	<span class="comment">// boolean布尔值包括true，false</span></div><div class="line"><span class="keyword">var</span> o=<span class="number">1</span>;		<span class="comment">// number，可以是整数和小数</span></div><div class="line"><span class="keyword">var</span> o=<span class="literal">NaN</span>		<span class="comment">// 非数字</span></div></pre></td></tr></table></figure>
+<p>JavaScript是弱类型语言，存在丢失精度问题，本系列以面向对象为主，所以不讨论此问题；</p>
+<h2 id="JS引用类型介绍"><a href="#JS引用类型介绍" class="headerlink" title="JS引用类型介绍"></a>JS引用类型介绍</h2><ul>
+<li>包括：Object类型，Array类型，Date类型，RegExp类型，</li>
+<li>Function类型，<strong>需要特别注意一下，函数在ECMAScript中是对象，不是一种数据类型，每个函数都是Function类型的实例，函数名是指向函数对象的指针，这可是JS世界的一等公民</strong></li>
+<li><p>基本包装类型，ECMAScript提供了三个特殊的引用类型，主要为了便于操作基本类型的值，包括：</p>
+<ol>
+<li>Boolean</li>
+<li>Number</li>
+<li>String</li>
+</ol>
+</li>
+<li><p>单体内置对象，包括：</p>
+<ol>
+<li>Global对象，这是个无形的对象，</li>
+<li>Math对象，这是用来做各种数学运算的内置对象</li>
+</ol>
+</li>
+<li>引用类型的值是保存在内存中的对象，也就是说，在操作对象时，实际上是在操作对象的引用，而不是实际的对象</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> o=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];		<span class="comment">// Array</span></div><div class="line"><span class="keyword">var</span> o=<span class="keyword">new</span> <span class="built_in">Date</span>();	<span class="comment">// Date</span></div><div class="line"><span class="keyword">var</span> o=&#123;&#125;;			<span class="comment">// Object</span></div></pre></td></tr></table></figure>
+<p><img src="/img/bVqCSW" alt="装逼图"></p>
+<blockquote>
+<p>讲类型就是基本的一个过渡介绍，Object和Function后面还会细讲，其余的类型可以根据上面列出的，具体的去参考书籍（推荐JavaScript高级程序设计）或其他资料，正题开始，先来个预热篇，吼吼~~</p>
+</blockquote>
+<h2 id="ECMAScript5数组的新特性"><a href="#ECMAScript5数组的新特性" class="headerlink" title="ECMAScript5数组的新特性"></a>ECMAScript5数组的新特性</h2><p>作为预热篇，我们先来聊聊，ECMAScript5中数组的新特性，个人做了如下区分：</p>
+<ul>
+<li>位置方法：indexOf，lastIndexOf</li>
+<li>迭代方法：every，filter，forEach，some，map</li>
+<li>缩小方法：reduce，reduceRight</li>
+</ul>
+<p><strong>(注：迭代方法回调支持3个参数，第1个是遍历的数组内容；第2个是对应的数组索引，第3个是数组本身)</strong></p>
+<p>来吧，每个方法都过一遍，敲敲代码：</p>
+<h3 id="indexOf"><a href="#indexOf" class="headerlink" title="indexOf"></a>indexOf</h3><p>包含两个参数，第一个是要检索的字符串值，第二个是可选参数，表示开始检索的位置，注：必须是合法值(0,length-1);返回值是该字符串首次出现的位置，找不到则返回-1；<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">"卫士"</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="string">"皮带"</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="string">"包裹"</span>];</div><div class="line"><span class="keyword">var</span> i = arr.indexOf(<span class="string">"皮带"</span>);</div><div class="line">alert(i);		<span class="comment">// 返回3</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> arr = [<span class="string">"卫士"</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="string">"皮带"</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="string">"包裹"</span>];</div><div class="line"><span class="keyword">var</span> i = arr.indexOf(<span class="string">"皮带"</span>,<span class="number">6</span>);</div><div class="line">alert(i);		<span class="comment">// 返回-1</span></div></pre></td></tr></table></figure></p>
+<p>由上面的例子，我们可以掌握indexOf的基本用法，可如果一个数组中重复存在相同的值，怎么样把重复项的索引一一找出来嘞，让<strong>帅狐</strong>show给你看，如下:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">"卫士"</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="string">"包裹"</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="string">"皮带"</span>,<span class="string">"包裹"</span>,<span class="string">"包裹"</span>];</div><div class="line"><span class="keyword">var</span> oArr = [];	<span class="comment">// 定义一个存放索引的数组</span></div><div class="line"><span class="keyword">var</span> i = arr.indexOf(<span class="string">"包裹"</span>);	<span class="comment">// 索引位置</span></div><div class="line"></div><div class="line"><span class="keyword">while</span>(i&gt;<span class="number">-1</span>)&#123;	<span class="comment">// 用while循环，直到找不到索引为止</span></div><div class="line">	oArr.push(i);</div><div class="line">	i = arr.indexOf(<span class="string">"包裹"</span>,i+<span class="number">1</span>);</div><div class="line">&#125;</div><div class="line">alert(oArr);</div></pre></td></tr></table></figure></p>
+<p>怎么样，帅吧，next…</p>
+<h3 id="lastIndexOf"><a href="#lastIndexOf" class="headerlink" title="lastIndexOf"></a>lastIndexOf</h3><p>跟indexOf，基本一样，不同的是，这个方法是从后往前检索；<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">"卫士"</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="string">"包裹"</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="string">"皮带"</span>,<span class="string">"包裹"</span>,<span class="string">"包裹"</span>];</div><div class="line"><span class="keyword">var</span> oArr = [];	<span class="comment">// 定义一个存放索引的数组</span></div><div class="line"><span class="keyword">var</span> i = arr.lastIndexOf(<span class="string">"包裹"</span>);</div><div class="line">alert(i);		<span class="comment">// 返回8</span></div></pre></td></tr></table></figure></p>
+<h3 id="every"><a href="#every" class="headerlink" title="every"></a>every</h3><p>对数组的每个元素都进行函数运行，如果每个都是true，则返回true，否则，如果有一个是false的话，嘿嘿~~，那就返回false咯<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">"卫士"</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="string">"包裹"</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="string">"皮带"</span>,<span class="string">"包裹"</span>,<span class="string">"包裹"</span>];</div><div class="line"><span class="keyword">var</span> res = arr.every(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> <span class="keyword">typeof</span> item==<span class="string">"string"</span>;	<span class="comment">// 这里复习下typeof操作符</span></div><div class="line">&#125;)	</div><div class="line">alert(res);	<span class="comment">// false，把数组中的数字项全部去掉，则返回true</span></div></pre></td></tr></table></figure></p>
+<h3 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h3><p>对数组的每个元素都进行函数运行，返回过滤后的选项<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">"卫士"</span>,<span class="number">23</span>,<span class="string">"包裹"</span>,<span class="number">565</span>,<span class="string">"皮带"</span>,<span class="string">"包裹"</span>,<span class="string">"包裹"</span>];</div><div class="line"><span class="keyword">var</span> res = arr.filter(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> <span class="keyword">typeof</span> item==<span class="string">"string"</span>;	<span class="comment">// 这里复习下typeof操作符</span></div><div class="line">&#125;)	</div><div class="line">alert(res);	<span class="comment">// 卫士, 包裹, 皮带, 包裹, 包裹</span></div></pre></td></tr></table></figure></p>
+<h3 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h3><p>对数组的每个元素都进行函数运行，注：该方法没有返回值<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = &#123;							<span class="comment">// 定义一个对象字面量</span></div><div class="line">	num: [[<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>],[<span class="number">2</span>,<span class="number">3</span>,<span class="number">8</span>],[<span class="number">9</span>,<span class="number">6</span>,<span class="number">1</span>]],	<span class="comment">// 一个二维数组</span></div><div class="line">	numR:<span class="function"><span class="keyword">function</span>(<span class="params">o</span>)				// 处理函数			    </span></div><div class="line">	&#123;</div><div class="line">		o.reverse();		<span class="comment">// 数组反向</span></div><div class="line">	&#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">arr.num.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</div><div class="line">	arr.numR(item);</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>这个例子，刚接触面向对象的童鞋会觉得略难，多敲代码多理解，无他，唯手熟尔~</p>
+<h3 id="some"><a href="#some" class="headerlink" title="some"></a>some</h3><p>对数组的每个元素都进行函数运行，对任一项返回为true，则返回为true，跟上面的every相似，好像every是处女座样(<em>^__^</em>)<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>];</div><div class="line"><span class="keyword">var</span> res = arr.some(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> item&gt;<span class="number">6</span>;</div><div class="line">&#125;)</div><div class="line">alert(res);	<span class="comment">// 返回false</span></div></pre></td></tr></table></figure></p>
+<h3 id="map"><a href="#map" class="headerlink" title="map"></a>map</h3><p>对数组的每个元素都进行函数运行，返回每次函数调用的结果组成的数组(略抽象),来吧，看例子<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>];</div><div class="line"><span class="keyword">var</span> res = arr.map(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> item+item;</div><div class="line">&#125;)</div><div class="line">alert(res);	<span class="comment">// 返回2,6,10</span></div></pre></td></tr></table></figure></p>
+<h3 id="reduce和reduceRight"><a href="#reduce和reduceRight" class="headerlink" title="reduce和reduceRight"></a>reduce和reduceRight</h3><p>这俩一起说，兄弟俩嘛，这俩方法都会选代数组所有项，然后构建一个最终返回的值。reduce()方法从数组的第一项开始，逐个遍历到最后，reduceRight则相反<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>];</div><div class="line"><span class="keyword">var</span> res = arr.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">prev,cur,index,array</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> prev+cur;</div><div class="line">&#125;)</div><div class="line">alert(res);	<span class="comment">// 返回9</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> arr = [[<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>],[<span class="number">9</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">2</span>,<span class="number">1</span>],[<span class="number">6</span>,<span class="number">2</span>,<span class="number">1</span>]];	</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">s</span>(<span class="params">prev,cur</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> prev.concat(cur);	<span class="comment">// 合并二维数组</span></div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">m</span>(<span class="params">prev,cur</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> prev&gt;cur?prev:cur;	<span class="comment">// 取最大值</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> res = arr.reduce(s).reduceRight(m);		<span class="comment">// 链式调用</span></div><div class="line">alert(res);	<span class="comment">// 返回9</span></div></pre></td></tr></table></figure></p>
+<h2 id="话外音"><a href="#话外音" class="headerlink" title="话外音"></a>话外音</h2><ol>
+<li>既然咱聊的是面向对象，设计模式，还是再啰嗦一下，在这就不要去争论JavaScript是基于对象还是面向对象，不管是轩辕剑还是七星剑，能灵活运用才是关键(这么说会不会有点贱-_-)</li>
+<li>面向对象的基础扎实了，学框架(AngularJS,React)，或者学其他脚本语言(Php)等，上手都会很快</li>
+<li>再则程序世界学东西都是锻炼思维，掌握以前未掌握的，变成自己的一套才是精髓</li>
+<li>另外重申一下，本系列是JS进阶，初学者慎读，尤其设计模式的一些知识会跟java进行比较，模拟等</li>
+<li>预热篇介绍的数组新特性在后面的设计模式实战中会用到，其他基础知识，如数组，闭包等请参阅书籍或其他资料</li>
+</ol>
+<blockquote>
+<p>这一回主要介绍了下JavaScript的数据类型，聊了ES5中数组的9个新特性，下一回聊JavaScript的Object类型。</p>
+</blockquote>
+<hr>
+<p><strong>注：此系飞狐原创，转载请注明出处</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://segmentfault.com/blog/feihu" target="_blank" rel="external">听飞狐聊设计模式系列</a></p>
 
     
   </div>
